@@ -70,6 +70,14 @@
   &--secondary {
     background-color: var(--colibri-color-secondary);
     border-color: var(--colibri-color-secondary);
+
+    /**
+     *  STATES
+     */
+     &:hover {
+      background-color: var(--colibri-color-secondary-700);
+      border-color: var(--colibri-color-secondary-700);
+    }
   }
 
   /**
