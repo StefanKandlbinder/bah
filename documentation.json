@@ -88,11 +88,10 @@
         },
         {
             "name": "ColibriButtonComponent",
-            "id": "component-ColibriButtonComponent-09b321344ecd4cb0f42a9f76cd044238",
+            "id": "component-ColibriButtonComponent-6aea0fd48e57a9a26dcc7e376b519e39",
             "file": "colibri/button/src/lib/colibri-button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
-            "host": {},
             "inputs": [],
             "outputs": [],
             "providers": [],
@@ -110,37 +109,37 @@
                     "name": "disabled",
                     "defaultValue": "false",
                     "description": "<p>Is it disabled?</p>\n",
-                    "line": 32
+                    "line": 29
                 },
                 {
                     "name": "full",
                     "defaultValue": "false",
                     "description": "<p>Take the full width of the parent container</p>\n",
-                    "line": 44
+                    "line": 41
                 },
                 {
                     "name": "label",
                     "defaultValue": "''",
-                    "line": 14
+                    "line": 11
                 },
                 {
                     "name": "loading",
                     "defaultValue": "false",
                     "description": "<p>Is it loading?</p>\n",
-                    "line": 38
+                    "line": 35
                 },
                 {
                     "name": "size",
                     "defaultValue": "'medium'",
                     "description": "<p>How large should the button be?</p>\n",
-                    "line": 26,
+                    "line": 23,
                     "type": "\"small\" | \"medium\" | \"large\""
                 },
                 {
                     "name": "type",
                     "defaultValue": "'primary'",
                     "description": "<p>What type of button do we want?</p>\n",
-                    "line": 20,
+                    "line": 17,
                     "type": "\"primary\" | \"secondary\""
                 }
             ],
@@ -149,7 +148,7 @@
                     "name": "onHandleClick",
                     "defaultValue": "new EventEmitter<Event>()",
                     "description": "<p>Optional click handler</p>\n",
-                    "line": 50,
+                    "line": 47,
                     "type": "EventEmitter"
                 }
             ],
@@ -160,7 +159,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'colibri-button',\n  host: {\n    '[attr.disabled]': 'disabled || null'\n  },\n  templateUrl: './colibri-button.component.html',\n  styleUrls: ['./colibri-button.component.scss']\n})\n\nexport class ColibriButtonComponent {\n  @Input()\n  label = '';\n\n  /**\n   * What type of button do we want?\n   */\n  @Input()\n  type: 'primary' | 'secondary' = 'primary';\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Is it disabled?\n   */\n  @Input()\n  disabled = false;\n\n  /**\n   * Is it loading?\n   */\n  @Input()\n  loading = false;\n\n  /**\n   * Take the full width of the parent container\n   */\n  @Input()\n  full = false;\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onHandleClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    return [\n      'colibri-button',\n      `colibri-button--${this.size}`,\n      `colibri-button--${this.type}`,\n      this.loading ? 'colibri-button--loading' : '',\n      this.full ? 'colibri-button--full' : ''\n    ];\n  }\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'colibri-button',\n  templateUrl: './colibri-button.component.html',\n  styleUrls: ['./colibri-button.component.scss']\n})\n\nexport class ColibriButtonComponent {\n  @Input()\n  label = '';\n\n  /**\n   * What type of button do we want?\n   */\n  @Input()\n  type: 'primary' | 'secondary' = 'primary';\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Is it disabled?\n   */\n  @Input()\n  disabled = false;\n\n  /**\n   * Is it loading?\n   */\n  @Input()\n  loading = false;\n\n  /**\n   * Take the full width of the parent container\n   */\n  @Input()\n  full = false;\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onHandleClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    return [\n      'colibri-button',\n      `colibri-button--${this.size}`,\n      `colibri-button--${this.type}`,\n      this.loading ? 'colibri-button--loading' : '',\n      this.full ? 'colibri-button--full' : ''\n    ];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -176,7 +175,7 @@
                         "name": "classes",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 52
+                        "line": 49
                     }
                 }
             },
@@ -246,7 +245,7 @@
         },
         {
             "name": "PageComponent",
-            "id": "component-PageComponent-02b71be2f8de91bfff9c43df90c9134f",
+            "id": "component-PageComponent-b4eea89bd3cf0e2599717e9ea92bb8a7",
             "file": "stories/page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -258,14 +257,14 @@
                 "./page.css"
             ],
             "styles": [],
-            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <colibri-button label=\"This is a fucking awesome bet-at-home button!\" size=\"large\" disabled=\"true\" type=\"secondary\"></colibri-button>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://www.learnstorybook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Learn Storybook\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\">\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        <colibri-button label=\"This is a fucking awesome bet-at-home button!\" size=\"large\" type=\"secondary\"></colibri-button>\n      </p>\n      <p>\n        <colibri-button label=\"And a full loading one!\" full=\"true\" loading=\"true\" type=\"primary\"></colibri-button>\n      </p>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://www.learnstorybook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Learn Storybook\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\">\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
                 {
                     "name": "user",
                     "defaultValue": "null",
-                    "line": 67,
+                    "line": 72,
                     "type": "unknown"
                 }
             ],
@@ -273,19 +272,19 @@
                 {
                     "name": "onCreateAccount",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 76,
+                    "line": 81,
                     "type": "EventEmitter"
                 },
                 {
                     "name": "onLogin",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 70,
+                    "line": 75,
                     "type": "EventEmitter"
                 },
                 {
                     "name": "onLogout",
                     "defaultValue": "new EventEmitter<Event>()",
-                    "line": 73,
+                    "line": 78,
                     "type": "EventEmitter"
                 }
             ],
@@ -296,7 +295,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <colibri-button label=\"This is a fucking awesome bet-at-home button!\" size=\"large\" disabled=\"true\" type=\"secondary\"></colibri-button>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://www.learnstorybook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Learn Storybook\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\">\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        <colibri-button label=\"This is a fucking awesome bet-at-home button!\" size=\"large\" type=\"secondary\"></colibri-button>\n      </p>\n      <p>\n        <colibri-button label=\"And a full loading one!\" full=\"true\" loading=\"true\" type=\"primary\"></colibri-button>\n      </p>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://www.learnstorybook.com\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Learn Storybook\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\">\n          docs\n        </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -357,14 +356,6 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
-                "name": "context",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "colibri/core/src/test.ts",
-                "type": "",
-                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-            },
-            {
                 "name": "disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -392,7 +383,7 @@
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Header.stories.ts",
+                "file": "stories/Page.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -400,14 +391,6 @@
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Page.stories.ts",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "LoggedOut",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "stories/Header.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
@@ -417,6 +400,14 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "stories/Page.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -435,13 +426,6 @@
                 "file": "stories/Button.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "require",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "colibri/core/src/test.ts",
-                "type": "literal type"
             },
             {
                 "name": "require",
@@ -486,17 +470,17 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Page.stories.ts",
-                "type": "Story<Page>",
-                "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
+                "file": "stories/Header.stories.ts",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Header.stories.ts",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
+                "file": "stories/Page.stories.ts",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -525,23 +509,6 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "colibri/button/src/test.ts",
-                    "type": "literal type"
-                }
-            ],
-            "colibri/core/src/test.ts": [
-                {
-                    "name": "context",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "colibri/core/src/test.ts",
-                    "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
-                {
-                    "name": "require",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "colibri/core/src/test.ts",
                     "type": "literal type"
                 }
             ],
@@ -629,32 +596,6 @@
                     "defaultValue": "(args: Button) => ({\n  component: Button,\n  props: args,\n})"
                 }
             ],
-            "stories/Header.stories.ts": [
-                {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Header.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "LoggedOut",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Header.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/Header.stories.ts",
-                    "type": "Story<Header>",
-                    "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
-                }
-            ],
             "stories/Page.stories.ts": [
                 {
                     "name": "LoggedIn",
@@ -680,6 +621,32 @@
                     "type": "Story<Page>",
                     "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
                 }
+            ],
+            "stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
+                }
             ]
         },
         "groupedFunctions": {},
@@ -688,7 +655,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 6,
+        "count": 7,
         "status": "low",
         "files": [
             {
@@ -762,26 +729,6 @@
             },
             {
                 "filePath": "colibri/button/src/test.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "require",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "colibri/core/src/test.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "context",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "colibri/core/src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
