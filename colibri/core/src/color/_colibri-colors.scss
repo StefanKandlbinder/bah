@@ -1,0 +1,17 @@
+:root {
+	/**
+	 *	COLORS
+	 */
+	--colibri-color-venice-blue: #002554;
+	--colibri-color-sushi: #7EC51E;
+	--colibri-color-chelsea: #6BB816;
+	--colibri-color-cinnabar: #e53935;
+	--colibri-color-ecstasy: #f57f17;
+	--colibri-color-limeade: #5FAF0F;
+	--colibri-color-white: #FFFFFF;
+    --colibri-color-negative: #FFFFFF;
+    
+	--colibri-color-primary: var(--colibri-color-venice-blue);
+	--colibri-color-secondary: var(--colibri-color-sushi);
+	--colibri-color-secondary--darken: var(--colibri-color-sushi);
+}
