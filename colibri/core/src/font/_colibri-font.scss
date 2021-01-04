@@ -1,9 +1,24 @@
 :root {
 	/**
-	 *	FONT
+	 *	FONT FAMILY
 	 */
      --colibri-font-family: 'Roboto', sans-serif;
      --colibri-font-family-condensed: 'Roboto Condensed', sans-serif;
 
+     
+     /**
+	 *	FONT WEIGHT
+	 */
      --colibri-font-weight-bold: 700;
+
+     /**
+	 *	FONT SIZE
+	 */
+     --colibri-font-size-0: 0;
+     --colibri-font-size-1: 0.5rem;
+     --colibri-font-size-2: 0.75rem;
+     --colibri-font-size-4: 1rem;
+     --colibri-font-size-8: 2rem;
+     --colibri-font-size-16: 4rem;
+     --colibri-font-size-32: 8rem;
 }
