@@ -1,11 +1,9 @@
 {
-  "name": "@colibri/core",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^11.0.5",
-    "@angular/core": "^11.0.5"
-  },
-  "dependencies": {
-    "tslib": "^2.0.0"
+  "name": "colibri-core",
+  "version": "0.0.2",
+  "description": "colibri core package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanKandlbinder/bah.git"
   }
 }

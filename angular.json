@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "colibri",
   "projects": {
-    "button": {
+    "colibri-button": {
       "projectType": "library",
       "root": "colibri/button",
       "sourceRoot": "colibri/button/src",
@@ -40,7 +40,7 @@
         }
       }
     },
-    "core": {
+    "colibri-core": {
       "projectType": "library",
       "root": "colibri/core",
       "sourceRoot": "colibri/core/src",
