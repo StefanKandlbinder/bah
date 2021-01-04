@@ -1,6 +1,6 @@
 .colibri-button {
   /**
-    *   TOKEN
+    *   TOKEN FONT
     */
   --colibri-button-font-family: var(--colibri-font-family-condensed);
   --colibri-button-font-weight: var(--colibri-font-weight-bold);
@@ -9,12 +9,27 @@
   --colibri-button-font-size-small: var(--colibri-font-size-2);
   --colibri-button-font-size-large: var(--colibri-font-size-8);
 
+  /**
+    *   TOKEN COLOR
+    */
+  --colibri-button-color: var(--colibri-color-white);
+
+  /**
+    *   TOKEN SPACE
+    */
+  --colibri-button-padding-x: var(--colibri-space-4);
+  --colibri-button-padding-y: var(--colibri-space-2);
+  --colibri-button-small-padding-x: var(--colibri-space-2);
+  --colibri-button-small-padding-y: var(--colibri-space-1);
+  --colibri-button-large-padding-x: var(--colibri-space-8);
+  --colibri-button-large-padding-y: var(--colibri-space-4);
+
   background: transparent;
   border: none;
   outline: none;
-  color: white;
+  color: var(--colibri-button-color);
   box-sizing: border-box;
-  padding: 0.5rem 1rem;
+  padding: var(--colibri-button-padding-y) var(--colibri-button-padding-x);
   border-radius: 0.5rem;
   border-width: 2px;
   border-style: solid;
@@ -94,12 +109,12 @@
     *   SIZES
     */
   &--small {
-    padding: 0.25rem 0.5rem;
+    padding: var(--colibri-button-small-padding-y) var(--colibri-button-small-padding-x);
     font-size: var(--colibri-button-font-size-small);
   }
 
   &--large {
-    padding: 0.75rem 1.5rem;
+    padding: var(--colibri-button-large-padding-y) var(--colibri-button-large-padding-x);
     font-size: var(--colibri-button-font-size-large);
   }
 
