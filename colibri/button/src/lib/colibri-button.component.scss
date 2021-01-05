@@ -1,29 +1,4 @@
 .colibri-button {
-  /**
-    *   TOKEN FONT
-    */
-  --colibri-button-font-family: var(--colibri-font-family-condensed);
-  --colibri-button-font-weight: var(--colibri-font-weight-bold);
-
-  --colibri-button-font-size: var(--colibri-font-size-4);
-  --colibri-button-font-size-small: var(--colibri-font-size-2);
-  --colibri-button-font-size-large: var(--colibri-font-size-8);
-
-  /**
-    *   TOKEN COLOR
-    */
-  --colibri-button-color: var(--colibri-color-white);
-
-  /**
-    *   TOKEN SPACE
-    */
-  --colibri-button-padding-x: var(--colibri-space-4);
-  --colibri-button-padding-y: var(--colibri-space-2);
-  --colibri-button-small-padding-x: var(--colibri-space-2);
-  --colibri-button-small-padding-y: var(--colibri-space-1);
-  --colibri-button-large-padding-x: var(--colibri-space-8);
-  --colibri-button-large-padding-y: var(--colibri-space-4);
-
   background: transparent;
   border: none;
   outline: none;

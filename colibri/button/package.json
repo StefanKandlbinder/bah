@@ -1,6 +1,6 @@
 {
   "name": "colibri-button",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Button which is integrated into bet-at-home.com Design System (Colibri)",
   "peerDependencies": {
     "@angular/common": "^11.0.5",

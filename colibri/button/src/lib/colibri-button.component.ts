@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter, ViewEncapsulation } from '@angu
 @Component({
   selector: 'colibri-button',
   templateUrl: './colibri-button.component.html',
-  styleUrls: ['./colibri-button.component.scss'],
+  styleUrls: ['./colibri-button.component.tokens.scss', './colibri-button.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 
