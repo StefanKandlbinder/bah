@@ -9,7 +9,7 @@ import Page from './page.component';
 
 import { ColibriButtonComponent } from 'colibri-button';
 
-import * as HeaderStories from './Header.stories';
+import * as HeaderStories from './Header.storiez';
 
 export default {
   title: 'Example/Page',

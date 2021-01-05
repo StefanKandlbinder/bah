@@ -1,5 +1,8 @@
 import { Component, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
+/**
+ *  Colibri Button
+ */
 @Component({
   selector: 'colibri-button',
   templateUrl: './colibri-button.component.html',
