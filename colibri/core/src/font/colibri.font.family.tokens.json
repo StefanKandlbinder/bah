@@ -1,0 +1,10 @@
+{
+  "colibri": {
+    "font": {
+      "family": {
+        "default" : { "value": "Roboto, sans-serif" },
+        "condensed" : { "value": "Roboto Condensed, sans-serif" }
+      }
+    }
+  }
+}

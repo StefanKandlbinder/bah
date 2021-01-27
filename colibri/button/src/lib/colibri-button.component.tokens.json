@@ -1,0 +1,58 @@
+{
+  "colibri": {
+    "button": {
+      "font": {
+        "family" : {
+          "value": "{colibri.font.family.condensed.value}"
+        },
+        "weight" : {
+          "value": "{colibri.font.weight.bold.value}"
+        },
+        "size" : {
+          "defaut": {
+            "value": "{colibri.font.size.4.value}"
+          },
+          "small": {
+              "value": "{colibri.font.size.2.value}"
+          },
+          "large": {
+            "value": "{colibri.font.size.8.value}"
+          }
+        }
+      },
+      "color": {
+        "value": "{colibri.color.white.500.value}"
+      },
+      "default": {
+        "padding": {
+          "x": {
+            "value": "{colibri.space.4.value}"
+          },
+          "y": {
+            "value": "{colibri.space.2.value}"
+          }
+        }
+      },
+      "small": {
+        "padding": {
+          "x": {
+            "value": "{colibri.space.2.value}"
+          },
+          "y": {
+            "value": "{colibri.space.1.value}"
+          }
+        }
+      },
+      "large": {
+        "padding": {
+          "x": {
+            "value": "{colibri.space.8.value}"
+          },
+          "y": {
+            "value": "{colibri.space.4.value}"
+          }
+        }
+      }
+    }
+  }
+}

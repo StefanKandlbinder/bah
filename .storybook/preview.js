@@ -1,5 +1,5 @@
 
-import '!style-loader!css-loader!sass-loader!../colibri/core/src/_theme.scss';
+import '!style-loader!css-loader!sass-loader!../build/css/variables.css';
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
 setCompodocJson(docJson);

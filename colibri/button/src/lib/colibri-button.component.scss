@@ -31,7 +31,7 @@
     opacity: 0.5;
     pointer-events: none;
     color: transparent !important;
-    
+
     &::after {
         content: "";
         display: block;
@@ -56,8 +56,8 @@
     *   COLORS
     */
   &--primary {
-    border-color: var(--colibri-color-primary);
-    color: var(--colibri-color-primary);
+    border-color: var(--colibri-color-primary-500);
+    color: var(--colibri-color-primary-500);
 
     /**
      *  STATES
@@ -68,8 +68,8 @@
   }
 
   &--secondary {
-    background-color: var(--colibri-color-secondary);
-    border-color: var(--colibri-color-secondary);
+    background-color: var(--colibri-color-secondary-500);
+    border-color: var(--colibri-color-secondary-500);
 
     /**
      *  STATES

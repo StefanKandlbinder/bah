@@ -1,0 +1,9 @@
+{
+  "colibri": {
+    "font": {
+      "weight": {
+        "bold" : { "value": "700" }
+      }
+    }
+  }
+}

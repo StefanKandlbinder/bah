@@ -1,0 +1,41 @@
+{
+  "colibri": {
+    "color": {
+      "blue": {
+        "500" : { "value": "#002554" }
+      },
+      "green": {
+        "500" : { "value": "#7ec51e" },
+        "600" : { "value": "#6bb816" },
+        "700" : { "value": "#5faf0f" }
+      },
+      "red": {
+        "500": { "value": "#e53935" }
+      },
+      "orange": {
+        "500": { "value": "#f57f17" }
+      },
+      "white": {
+        "500": { "value": "#ffffff" }
+      },
+      "primary": {
+        "500" : {
+          "value": "{colibri.color.blue.500.value}"
+        }
+      },
+      "secondary": {
+        "500": {
+          "value": "{colibri.color.green.500.value}"
+        },
+        "700": {
+          "value": "{colibri.color.green.700.value}"
+        }
+      },
+      "negative": {
+        "500": {
+          "value": "{colibri.color.white.500.value}"
+        }
+      }
+    }
+  }
+}
