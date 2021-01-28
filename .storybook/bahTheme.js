@@ -13,7 +13,7 @@ export default create({
   appBorderRadius: 0,
 
   // Typography
-  fontBase: '"Roboto", sans-serif',
+  fontBase: '"Roboto", sans-serif !important',
   fontCode: 'monospace',
 
   // Text colors
