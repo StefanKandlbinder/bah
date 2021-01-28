@@ -52,3 +52,13 @@ loading.args = {
   loading: true,
   full: false
 };
+
+export const full = template.bind({});
+full.args = {
+  type: 'primary',
+  size: 'medium',
+  label: 'Full Button',
+  disabled: false,
+  loading: false,
+  full: true
+};
