@@ -5,7 +5,7 @@ import { ColibriButtonComponent } from './colibri-button.component';
 
 export default {
   title: 'Components/Button',
-  component: ColibriButtonComponent
+  component: ColibriButtonComponent,
 } as Meta;
 
 const template: Story<ColibriButtonComponent> = (args: ColibriButtonComponent) => ({

@@ -1,4 +1,5 @@
 import { create } from '@storybook/theming/create';
+import { styled } from '@storybook/theming';
 
 export default create({
   base: 'light',
@@ -8,7 +9,7 @@ export default create({
 
   // UI
   appBg: '#f5f5f5',
-  appContentBg: '#f7f7f7',
+  appContentBg: '#f6f6f6',
   appBorderColor: 'grey',
   appBorderRadius: 0,
 
@@ -34,4 +35,9 @@ export default create({
   brandTitle: 'bet-at-home custom storybook',
   brandUrl: 'https://www.bet-at-home.com/',
   brandImage: 'https://www.bet-at-home.com/vstatic/bff696eda141f3a9e00ed3634adb1a6506/images/svg/bah-logo.svg',
+
+  /* addonActionsTheme: {
+    BASE_FONT_FAMILY: '"Roboto", sans-serif',
+    BASE_BACKGROUND_COLOR: 'transparent',
+  } */
 });
